@@ -4,8 +4,6 @@ let datas = [];
 function getData(event){
     event.preventDefault();
     let projectName = document.getElementById("projectn").value;
-    let startDate = document.getElementById("sdate").value;
-    let endDate = document.getElementById("edate").value;
     let description = document.getElementById("description").value;
     let sdate = new Date(document.getElementById("sdate").value);
     let edate = new Date(document.getElementById("edate").value);
@@ -26,9 +24,9 @@ function getData(event){
         return alert("Description Cannot be empty");
     } else if (description.length < 80) {
         return alert("Description must be more than 80 Characters");
-    } else if (startDate == "") {
+    } else if (sdate == "") {
         return alert("Date Cannot be empty");
-    } else if (endDate == "") {
+    } else if (edate == "") {
         return alert("Date Cannot be empty");
     }
     
