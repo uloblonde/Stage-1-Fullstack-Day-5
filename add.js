@@ -54,8 +54,6 @@ function getData(event){
 
 
 function showData (){
-    let contents = document.getElementById("contents");
-    contents.innerHTML = "";
 
     for(let i = 0; i < datas.length;i++){
         contents.innerHTML += `<div class="card-post">
